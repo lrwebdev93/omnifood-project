@@ -22,8 +22,7 @@ html {
 }
 
 header {
-    background-image: url(images/hero.jpg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
-    background-image: url(images/hero.jpg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -37,9 +36,61 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 h1 {
     margin: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 240%;
+    /* this is an example of how you use relative measurements (%) to make it bigger than the standard html global size */
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300px;
+    text-decoration: none;
+    border-radius: 200px;
+    /* turns the button spherical */
+    color: #fff;
+    transition:background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+    /* this btn will be bigger as box model says its padding+content+border, and there are more words in this btn */
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #ffffff;
+    /* this btn will be bigger as box model says its padding+content+border, and there are more words in this btn */
 }
