@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* this is the imported font */
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    /* only attribute with absolute value */
+    margin: 0 auto;
+    /* centres the container */
+}
+
+header {
+    background-image: url(images/hero.jpg), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    background-image: url(images/hero.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* 100vh is 100% of the browser viewport */
+}
+
+.hero-text-box {
+    position: absolute;
+    /* has to be absolute as it's the only way to vertically and horizontally position */
+    width: 1440px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h1 {
+    margin: 0;
+}
