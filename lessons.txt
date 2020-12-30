@@ -1,0 +1,10 @@
+HTML
+NAVIGATION BAR: Will use <ul class=""> (unordered list), with each button having it's own <li><a href=""> tags.
+SECTION VS DIV: Section defines a block of a document, div has no meaning at all and simply represents it's children elements.
+HEADINGS: There should only be 1x <h1>, subsequent will be <h2> - <h6> (can have multiple of each of these).
+
+CSS
+FLOAT: Will place an element to the left or right of its container, allowing text/inline elements to wrap around it.
+TRANSITION: Adds an over time effect, such as colour filling a button you hover over.
+BUTTONS/LINKS: Add an hover/active(btn) or link/visited(link) selector to dictate what happens when a button/link is active or clicked.
+WORD-SPACING: Tidy up between letters.
