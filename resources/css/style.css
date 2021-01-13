@@ -32,6 +32,24 @@ html {
     /* centres the container */
 }
 
+section {
+    padding: 80px 0;
+
+}
+
+.box {
+
+    padding: 1%;
+}
+
+ion-icon {
+    color:#e67e22;
+display:block;
+font-size: 200%;
+margin-bottom:10px;
+
+}
+
 /* ----------------------------- */
 /* PAGE HEADER */
 /* ----------------------------- */
@@ -93,19 +111,74 @@ header {
 /* HEADINGS */
 /* ----------------------------- */
 
-h1 {
-    margin: 0;
-    margin-bottom: 10px;
-    color: #fff;
-    font-size: 240%;
-    /* this is an example of how you use relative measurements (%) to make it bigger than the standard html global size */
+h1,
+h2,
+h3 {
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
 
 }
 
+h1 {
+    word-spacing: 4px;
+    font-size: 240%;
+    /* this is an example of how you use relative measurements (%) to make it bigger than the standard html global size */
+    margin-bottom: 10px;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+
+h2 {
+    word-spacing: 2px;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+
+h2:after {
+    /*pseudo-class*/
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    /*whenever you use 'after' psuedo-class you have to specify content*/
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100px;
+
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+
+}
+
+/* ----------------------------- */
+/* PARAGRAPHS */
+/* ----------------------------- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    /* this is a centre trick - the width is 70%, so that leaves 30 either side. If you set left to 15%, that also leaves 15% on the right - aka centered */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box p {
+    /*selects all paragraphs within box*/
+    font-size: 85%;
+    line-height: 145%;
+    
+    }
+
+    
 /* ----------------------------- */
 /* BUTTONS */
 /* ----------------------------- */
@@ -153,5 +226,3 @@ h1 {
     color: #ffffff;
     /* this btn will be bigger as box model says its padding+content+border, and there are more words in this btn */
 }
-
-
