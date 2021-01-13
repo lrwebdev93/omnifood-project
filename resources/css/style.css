@@ -43,10 +43,10 @@ section {
 }
 
 ion-icon {
-    color:#e67e22;
-display:block;
-font-size: 200%;
-margin-bottom:10px;
+    color: #e67e22;
+    display: block;
+    font-size: 200%;
+    margin-bottom: 10px;
 
 }
 
@@ -107,6 +107,55 @@ header {
 
 }
 
+/* ----------------------------- */
+/* FEATURES */
+/* ----------------------------- */
+.section-features .long-copy{
+    margin-bottom:40px;
+}
+
+/* ----------------------------- */
+/* MEALS */
+/* ----------------------------- */
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    /* as we declared this class as a list, we don't want there to be a 'list style'*/
+    width: 100%;
+
+}
+
+.meals-showcase li {
+    display: block;
+    /* very common use*/
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow:hidden;
+    /*transform below makes the image 'pop' out, overflow:hidden stops that image from breaking the 100% of the barrier and just zooms in instead */
+    background-color:#000000;
+
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition:transform 0.5s, opactity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+opacity:1;
+}
 /* ----------------------------- */
 /* HEADINGS */
 /* ----------------------------- */
@@ -175,10 +224,10 @@ h3 {
     /*selects all paragraphs within box*/
     font-size: 85%;
     line-height: 145%;
-    
-    }
 
-    
+}
+
+
 /* ----------------------------- */
 /* BUTTONS */
 /* ----------------------------- */
