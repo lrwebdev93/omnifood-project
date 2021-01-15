@@ -50,12 +50,16 @@ section {
     padding: 1%;
 }
 
-ion-icon {
+.icons-features {
     color: #e67e22;
     display: block;
     font-size: 200%;
     margin-bottom: 10px;
 
+}
+
+.icons-cities{
+    size:small;
 }
 
 /* ----------------------------- */
@@ -68,6 +72,9 @@ header {
     background-position: center;
     height: 100vh;
     /* 100vh is 100% of the browser viewport */
+    background-attachment: fixed;
+
+
 }
 
 .hero-text-box {
@@ -352,4 +359,6 @@ margin-bottom:15px;
 .city-feature {
 margin-bottom:5px;
 }
+
+
 
