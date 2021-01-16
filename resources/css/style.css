@@ -410,3 +410,19 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+/* ----------------------------- */
+/* SIGN-UP SECTION */
+/* ----------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color:#ffffff;
+    border-radius:5px;
+width: 90%;
+margin-left:5%;
+/*half of the remaining 10% of 90-100*/
+}
