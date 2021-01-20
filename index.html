@@ -275,22 +275,23 @@
                 <div class="plan-box">
                     <div>
                         <h3>Premium</h3>
-                        <p class="plan-price">£399 per month</p>
+                        <p class="plan-price">£399 <span>per month</span></p>
                         <p class="plan-price-meal">That’s only £13.30 per meal</p>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>1 meal every day
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>1 meal every day
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Order 24/7
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Order 24/7
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Access to newest creations
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Access to newest
+                                creations
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Free delivery
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Free delivery
                             </li>
                         </ul>
                     </div>
@@ -303,22 +304,23 @@
                 <div class="plan-box">
                     <div>
                         <h3>Pro</h3>
-                        <p class="plan-price">£149 per month</p>
+                        <p class="plan-price">£149 <span>per month</span></p>
                         <p class="plan-price-meal">That’s only £13.30 per meal</p>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>1 meal 10 days/month
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>1 meal 10 days/month
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Order 24/7
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Order 24/7
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Access to newest creations
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Access to newest
+                                creations
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Free delivery
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Free delivery
                             </li>
                         </ul>
                     </div>
@@ -331,22 +333,23 @@
                 <div class="plan-box">
                     <div>
                         <h3>Starter</h3>
-                        <p class="plan-price">£19 / meal</p>
-                        <p class="plan-price-meal"></p>
+                        <p class="plan-price">£19 <span>per meal</span></p>
+                        <p class="plan-price-meal">&nbsp;</p>
+                        <!--Stands for no break space, smaller gap than <br>-->
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>1 meal
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>1 meal
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Order from 8am-12pm
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Order from 8am-12pm
                             </li>
                             <li>
-                                <ion-icon name="close-outline"></ion-icon>
+                                <ion-icon name="close-outline" class="plan-icon"></ion-icon>
                             </li>
                             <li>
-                                <ion-icon name="checkmark-outline"></ion-icon>Free delivery
+                                <ion-icon name="checkmark-outline" class="plan-icon"></ion-icon>Free delivery
                             </li>
                         </ul>
                     </div>
@@ -355,13 +358,76 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class"row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search Engine</option>
+                            <option value="ad">Advertisment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!"">
+                    </div>
+                </div>
+                <!--span 1 + span 2 = span 3 of 3 - column 2 will be 2x as long as column 1 -->
+                <!--span 1of3 = 33%, span 2 is 66% and span 3 is 100%-->
+
+            </form>
 
         </div>
 
     </section>
-
 </body>
 
 </html>
-
-
