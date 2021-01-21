@@ -20,3 +20,5 @@ To make CSS3 on every browser, you need to prefix some CSS3 properties.
 For older browsers, there are three javascript scripts you can run to help understand and execute CSS queries required on responsive web design. jsdelivr.com. 
 - Click respond in jsdelivr and include ths script at the end of the body.
 
+USING PROPERTIES ON BROWSERS:
+Use website caniuse.com and enter a property to see what broser version it is compatible with. 
