@@ -8,3 +8,15 @@ FLOAT: Will place an element to the left or right of its container, allowing tex
 TRANSITION: Adds an over time effect, such as colour filling a button you hover over.
 BUTTONS/LINKS: Add an hover/active(btn) or link/visited(link) selector to dictate what happens when a button/link is active or clicked.
 WORD-SPACING: Tidy up between letters.
+
+RESPONSIVE
+Media Queries and Breakpoints:
+- 0-480px: Mobile
+- 480-768px: Tablet Vertical
+- 768-1024px Tablet Horizontal
+
+A NOTE ON BROWSERS:
+To make CSS3 on every browser, you need to prefix some CSS3 properties. 
+For older browsers, there are three javascript scripts you can run to help understand and execute CSS queries required on responsive web design. jsdelivr.com. 
+- Click respond in jsdelivr and include ths script at the end of the body.
+
