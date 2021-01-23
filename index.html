@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <!-- main local css sheet -->
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
@@ -21,21 +20,31 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="sticky">
             <div class="row">
-                <img src="resources/css/images/logo-white.png" alt="Omnifood Logo" class="logo">
+                <img src="resources/images/logo-white.png" alt="Omnifood Logo" class="logo">
+                <img src="resources/images/logo.png" alt="Omnifood Logo Black" class="logo-black">
                 <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li>
+                        <a href="#">Food Delivery</a>
+                    </li>
+                    <li>
+                        <a href="#">How It Works</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Cities</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
                     <!-- these nav items will be list items (<li>) and also links (<a href>)-->
                 </ul>
             </div>
         </nav>
 
         <div class="hero-text-box">
-            <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
+            <h1>Goodbye junk food.
+                <br>Hello super healthy meals.</h1>
             <a class="btn btn-full" href="#">I’m hungry</a>
             <a class="btn btn-ghost" href="#">Show me more</a>
         </div>
@@ -161,9 +170,10 @@
                     <div>3</div>
                     <p>Enjoy your meal in less than 20 minutes. See you next time!</p>
                 </div>
-                <a href="#" class="btn-app"> <img src="resources/images/download-app.svg" alt="App Store Button"></a>
-                <a href="#" class="btn-app"> <img src="resources/images/download-app-android.png"
-                        alt="Play Store Button"></a>
+                <a href="#" class="btn-app">
+                    <img src="resources/images/download-app.svg" alt="App Store Button"></a>
+                <a href="#" class="btn-app">
+                    <img src="resources/images/download-app-android.png" alt="Play Store Button"></a>
             </div>
         </div>
     </section>
@@ -209,15 +219,15 @@
                 <img src="resources/images/berlin.jpg" alt="Berlin">
                 <h3>Berlin</h3>
                 <div class="city-feature">
-                    <ion-icon class="icons-cities" name="people-circle" size=small></ion-icon>
+                    <ion-icon class="icons-cities" name="people-circle" size="small"></ion-icon>
                     1600+ happy eaters
                 </div>
                 <div class="city-feature">
-                    <ion-icon class="icons-cities" name="person-add" size=small></ion-icon>
+                    <ion-icon class="icons-cities" name="person-add" size="small"></ion-icon>
                     110+ top chefs
                 </div>
                 <div class="city-feature">
-                    <ion-icon class="icons-cities" name="logo-twitter" size=small></ion-icon>
+                    <ion-icon class="icons-cities" name="logo-twitter" size="small"></ion-icon>
                     <a href="#">@omnifood_berlin</a>
                 </div>
             </div>
@@ -249,22 +259,24 @@
                 <blockquote>
                     Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so
                     Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-                    <cite><img src="resources/images/customer-1.jpg" alt="Alberto Duncan"> Alberto Duncan</cite>
+                    <cite><img src="resources/images/customer-1.jpg" alt="Alberto Duncan">
+                        Alberto Duncan</cite>
                 </blockquote>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
                     Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food
                     delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-
-                    <cite><img src="resources/images/customer-2.jpg" alt="Joana Silva"> Joana Silva</cite>
+                    <cite><img src="resources/images/customer-2.jpg" alt="Joana Silva">
+                        Joana Silva</cite>
                 </blockquote>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
                     I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and
                     ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-                    <cite><img src="resources/images/customer-3.jpg" alt="Milton Chapman"> Milton Chapman</cite>
+                    <cite><img src="resources/images/customer-3.jpg" alt="Milton Chapman">
+                        Milton Chapman</cite>
                 </blockquote>
             </div>
         </div>
@@ -279,7 +291,9 @@
                 <div class="plan-box">
                     <div>
                         <h3>Premium</h3>
-                        <p class="plan-price">£399 <span>per month</span></p>
+                        <p class="plan-price">£399
+                            <span>per month</span>
+                        </p>
                         <p class="plan-price-meal">That’s only £13.30 per meal</p>
                     </div>
                     <div>
@@ -308,7 +322,9 @@
                 <div class="plan-box">
                     <div>
                         <h3>Pro</h3>
-                        <p class="plan-price">£149 <span>per month</span></p>
+                        <p class="plan-price">£149
+                            <span>per month</span>
+                        </p>
                         <p class="plan-price-meal">That’s only £13.30 per meal</p>
                     </div>
                     <div>
@@ -337,7 +353,9 @@
                 <div class="plan-box">
                     <div>
                         <h3>Starter</h3>
-                        <p class="plan-price">£19 <span>per meal</span></p>
+                        <p class="plan-price">£19
+                            <span>per meal</span>
+                        </p>
                         <p class="plan-price-meal">&nbsp;</p>
                         <!--Stands for no break space, smaller gap than <br>-->
                     </div>
@@ -421,40 +439,58 @@
                         <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="submit" value="Send it!"">
-                    </div>
+                        <input type="submit" value="Send it!" ">
+                            </div>
+                        </div>
+                        <!--span 1 + span 2 = span 3 of 3 - column 2 will be 2x as long as column 1 -->
+                        <!--span 1of3 = 33%, span 2 is 66% and span 3 is 100%-->
+                    </form>
                 </div>
-                <!--span 1 + span 2 = span 3 of 3 - column 2 will be 2x as long as column 1 -->
-                <!--span 1of3 = 33%, span 2 is 66% and span 3 is 100%-->
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        <div class=" row">
+            </section>
+
+            <footer>
+                <div class=" row">
                         <div class="col span-1-of-2">
                             <ul class="footer-nav">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Press</a></li>
-                                <li><a href="#">iOS App</a></li>
-                                <li><a href="#">Android App</a></li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#">iOS App</a>
+                                </li>
+                                <li>
+                                    <a href="#">Android App</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col span-1-of-2">
                             <ul class="social-links">
-                                <li><a href="#">
+                                <li>
+                                    <a href="#">
                                         <ion-icon name="logo-facebook" class="social-fb"></ion-icon>
-                                    </a></li>
-                                <li><a href="#">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <ion-icon name="logo-twitter" class="social-tw"></ion-icon>
-                                    </a></li>
-                                <li><a href="#">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <ion-icon name="logo-google" class="social-go"></ion-icon>
-                                    </a></li>
-                                <li><a href="#">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <ion-icon name="logo-instagram" class="social-in"></ion-icon>
-                                    </a></li>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -465,9 +501,12 @@
                     </div>
                     </footer>
 
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+                    <script src="resources/js/script.js"></script>
+</body>
 </body>
 
 </html>
