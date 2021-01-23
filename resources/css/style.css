@@ -71,7 +71,7 @@ section {
 /* PAGE HEADER */
 /* ----------------------------- */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -89,15 +89,25 @@ header {
 }
 
 .logo {
-    height: 120px;
+    height: 100px;
     width: auto;
+    float: left;
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px 0;
+}
+
+/* Main Nav */
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 .main-nav li {
@@ -116,11 +126,43 @@ header {
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
+
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/* Sticky Nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky,
+.main-nav li a:link,
+.sticky,
+.main-nav li a:visited {
+    /* this selects the a tags inside each .main-nav li element */
+    padding: 16px 0;
+    color: #555555;
+}
+
+.main-nav {
+    margin-top: 18px;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
 }
 
 /* ----------------------------- */
@@ -336,7 +378,6 @@ input[type=submit]:active {
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
-    display: inline-block;
     border-radius: 50%;
     /*makes it round shape*/
     height: 55px;
