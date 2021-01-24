@@ -142,18 +142,18 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 2px #efefef;
+    z-index:9999;
+    /* vertical aligning, puts sticky nav above all other elements */
 }
 
-.sticky,
-.main-nav li a:link,
-.sticky,
-.main-nav li a:visited {
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
     /* this selects the a tags inside each .main-nav li element */
     padding: 16px 0;
     color: #555555;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 
