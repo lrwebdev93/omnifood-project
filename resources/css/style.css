@@ -15,6 +15,7 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -97,7 +98,7 @@ header {
 
 .logo-black {
     display: none;
-    height: 50px;
+    height: 60px;
     width: auto;
     float: left;
     margin-top: 5px 0;
@@ -243,6 +244,8 @@ a:visited {
 a:hover,
 a:active {
     color: #555555;
+    text-decoration:none;
+    padding-bottom: 1px;
     border-bottom: 1px solid transparent;
 }
 
@@ -258,7 +261,6 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 200px;
     /* turns the button spherical */
-    color: #fff;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
